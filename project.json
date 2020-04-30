@@ -1,0 +1,16 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaTopMenuModule",
+	"extensionName": "Phoca Top Menu Module",
+	"projectInitials" : "TM",				  
+	"description": "Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu in Joomla! administration.",
+	"nameSpace": "Joomla\\Module\\Phocatopmenu",
+	"projectUrl": "https://www.phoca.cz/phoca-top-menu-module",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/",
+	"projectDemo" : {
+	},
+	"projectColor": "#C14641"
+}

@@ -1,0 +1,7 @@
+#phtopmenu .dropdown:hover>.dropdown-menu {
+	display: block;
+}
+  
+#phtopmenu .dropdown>.dropdown-toggle:active {
+	pointer-events: none;
+}

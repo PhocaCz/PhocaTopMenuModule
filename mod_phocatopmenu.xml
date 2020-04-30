@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="administrator" method="upgrade" version="4.0">
+	<name>mod_phocatopmenu</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>30/04/2020</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>4.0.0</version>
+	<description>MOD_PHOCATOPMENU_DESCRIPTION</description>
+	<namespace path="src">Joomla\Module\Phocatopmenu</namespace>
+	<projectName>PhocaTopMenuModule</projectName>
+
+	<media destination="mod_phocatopmenu" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<files>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_phocatopmenu">index.html</filename>
+		<filename module="mod_phocatopmenu">manifest.xml</filename>
+		<filename module="mod_phocatopmenu">mod_phocatopmenu.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocatopmenu.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocatopmenu.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			
+			<fieldset name="basic" addfieldprefix="Joomla\Component\Menus\Administrator\Field"> 
+			
+			<field name="menutype" type="menu" label="MOD_PHOCATOPMENU_FIELD_MENUTYPE_LABEL" clientid="1"> 
+				<option value="*">MOD_PHOCATOPMENU_FIELD_MENUTYPE_OPTION_PREDEFINED</option> 
+			</field>
+			
+			<field name="preset" type="menuPreset" default="default" label="MOD_PHOCATOPMENU_FIELD_PRESET_LABEL" description="MOD_PHOCATOPMENU_FIELD_PRESET_DESC" showon="menutype:*"/>
+			
+			<field name="check" type="radio" label="MOD_PHOCATOPMENU_FIELD_CHECK_LABEL" description="MOD_PHOCATOPMENU_FIELD_CHECK_DESC" layout="joomla.form.field.radio.switcher" default="1" filter="integer" showon="menutype!:*"> 
+				<option value="0">JNO</option> 
+				<option value="1">JYES</option>
+			</field>
+			
+			<field name="shownew" type="radio" label="MOD_PHOCATOPMENU_FIELD_SHOWNEW" layout="joomla.form.field.radio.switcher" default="1" filter="integer" showon="menutype:*">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field name="showhelp" type="radio" label="MOD_PHOCATOPMENU_FIELD_SHOWHELP" layout="joomla.form.field.radio.switcher" default="1" filter="integer" showon="menutype:*"> 
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field name="forum_url" type="url" label="MOD_PHOCATOPMENU_FIELD_FORUMURL_LABEL" description="MOD_PHOCATOPMENU_FIELD_FORUMURL_DESC" filter="url" size="30" default="" showon="menutype:*" validate="url"/>  
+ 
+			<field name="open_menu" type="list" label="MOD_PHOCATOPMENU_FIELD_EVENT_OPEN_MENU_LABEL" description="MOD_PHOCATOPMENU_FIELD_EVENT_OPEN_MENU_DESC" layout="joomla.form.field.list" default="2" filter="integer">
+				<option value="1">MOD_PHOCATOPMENU_CLICK</option>
+				<option value="2">MOD_PHOCATOPMENU_HOVER</option>
+			</field>
+			
+			</fieldset>
+
+			<fieldset name="advanced"> <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" class="custom-select"/>
+ <field name="moduleclass_sfx" type="textarea" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" rows="3"/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="MOD_PHOCATOPMENU" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaTopMenuModule/master/manifest.xml]]></server>
+	</updateservers>
+</extension>
