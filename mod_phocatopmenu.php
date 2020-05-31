@@ -19,7 +19,10 @@ $lang 		= Factory::getLanguage();
 $lang->load('mod_menu.sys');
 $lang->load('mod_menu');
 
-$open_menu = $params->get('open_menu', 1);
+$open_menu 	= $params->get('open_menu', 1);
+$theme_style 		= $params->get('theme_style', 'default');
+
+
 
 $doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main.css');
 if ($open_menu == 2) {

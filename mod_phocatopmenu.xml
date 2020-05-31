@@ -2,12 +2,12 @@
 <extension type="module" client="administrator" method="upgrade" version="4.0">
 	<name>mod_phocatopmenu</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>30/04/2020</creationDate>
+	<creationDate>31/05/2020</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.0</version>
+	<version>4.0.1</version>
 	<description>MOD_PHOCATOPMENU_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Phocatopmenu</namespace>
 	<projectName>PhocaTopMenuModule</projectName>
@@ -62,6 +62,13 @@
 			<field name="open_menu" type="list" label="MOD_PHOCATOPMENU_FIELD_EVENT_OPEN_MENU_LABEL" description="MOD_PHOCATOPMENU_FIELD_EVENT_OPEN_MENU_DESC" layout="joomla.form.field.list" default="2" filter="integer">
 				<option value="1">MOD_PHOCATOPMENU_CLICK</option>
 				<option value="2">MOD_PHOCATOPMENU_HOVER</option>
+			</field>
+			
+			<field name="theme_style" type="list" label="MOD_PHOCATOPMENU_FIELD_THEME_LABEL" description="MOD_PHOCATOPMENU_FIELD_THEME_DESC" layout="joomla.form.field.list" default="default" filter="string">
+				<option value="default">MOD_PHOCATOPMENU_DEFAULT</option>
+				<option value="dark">MOD_PHOCATOPMENU_DARK</option>
+				<option value="black">MOD_PHOCATOPMENU_BLACK</option>
+			
 			</field>
 			
 			</fieldset>
