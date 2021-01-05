@@ -20,7 +20,8 @@ $lang->load('mod_menu.sys');
 $lang->load('mod_menu');
 
 $open_menu 	= $params->get('open_menu', 1);
-$theme_style 		= $params->get('theme_style', 'default');
+$theme_style 		= $params->get('theme_style', 'black');
+$custom_css 		= $params->get('custom_css', '');
 
 
 
@@ -28,6 +29,7 @@ $doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main.css');
 if ($open_menu == 2) {
 	$doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main-hover.css');
 }
+$doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/theme.css');
 $doc->addScript(JURI::root(true) . '/media/mod_phocatopmenu/js/main.js');
 
  
@@ -35,5 +37,11 @@ $enabled 		= !$app->input->getBool('hidemainmenu');
 $menu			= new CssPhocatopmenu($app);
 $root 			= $menu->load($params, $enabled);
 $root->level 	= 0;
+
+if ($custom_css != '') {
+	$doc->addCustomTag( "<style type=\"text/css\"> \n"
+	. htmlspecialchars(strip_tags($custom_css))
+	. "</style>\n");
+}
 
 require ModuleHelper::getLayoutPath('mod_phocatopmenu', $params->get('layout', 'default'));

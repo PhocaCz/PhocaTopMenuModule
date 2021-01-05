@@ -2,7 +2,7 @@
 
 
 
-![Phoca Top Menu Module](https://github.com/PhocaCz/PhocaTopMenuModule/blob/master/mod_phocatopmenu.png)
+![Phoca Top Menu Module](https://github.com/PhocaCz/PhocaTopMenuModule/blob/master/mod_phocatopmenu.png?raw=true)
 
 # Phoca Top Menu Module
 
@@ -50,7 +50,7 @@ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu 
 
 ## Version
 
-4.0.1
+4.0.3
 
 
 

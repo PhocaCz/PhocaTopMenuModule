@@ -2,12 +2,12 @@
 <extension type="module" client="administrator" method="upgrade" version="4.0">
 	<name>mod_phocatopmenu</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>31/05/2020</creationDate>
+	<creationDate>05/01/2021</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.1</version>
+	<version>4.0.3</version>
 	<description>MOD_PHOCATOPMENU_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Phocatopmenu</namespace>
 	<projectName>PhocaTopMenuModule</projectName>
@@ -64,12 +64,14 @@
 				<option value="2">MOD_PHOCATOPMENU_HOVER</option>
 			</field>
 			
-			<field name="theme_style" type="list" label="MOD_PHOCATOPMENU_FIELD_THEME_LABEL" description="MOD_PHOCATOPMENU_FIELD_THEME_DESC" layout="joomla.form.field.list" default="default" filter="string">
+			<field name="theme_style" type="list" label="MOD_PHOCATOPMENU_FIELD_THEME_LABEL" description="MOD_PHOCATOPMENU_FIELD_THEME_DESC" layout="joomla.form.field.list" default="black" filter="string">
 				<option value="default">MOD_PHOCATOPMENU_DEFAULT</option>
 				<option value="dark">MOD_PHOCATOPMENU_DARK</option>
 				<option value="black">MOD_PHOCATOPMENU_BLACK</option>
 			
 			</field>
+			
+			<field name="custom_css" type="textarea" default="" label="MOD_PHOCATOPMENU_FIELD_CUSTOM_CSS_LABEL" description="MOD_PHOCATOPMENU_FIELD_CUSTOM_CSS_DESC"/>
 			
 			</fieldset>
 
