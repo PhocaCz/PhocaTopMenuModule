@@ -39,7 +39,7 @@ elseif ($current->type == 'separator')
 }
 elseif ($current->hasChildren())
 {
-	//$class = ' class="dropdown-submenu"';
+	//$class .= ' class="dropdown-submenu"';
 	$class .= ' dropdown parent';
 
 	if ($current->level == 1)
@@ -49,10 +49,10 @@ elseif ($current->hasChildren())
 	else if ($current->level > 1)
 	{
 		if($doc->direction === 'rtl') {
-			$class.= ' dropdown parent text-nowrap dropleft"';
+			$class.= ' dropdown parent text-nowrap dropstart"';
 		} else {
-			$class.= ' dropdown parent text-nowrap dropright"';
-		}	
+			$class.= ' dropdown parent text-nowrap dropend"';
+		}
 	}
 	elseif ($current->class === 'scrollable-menu')
 	{
@@ -79,9 +79,9 @@ $itemImage  = '';
 
 if ($current->hasChildren())
 {
-	///$linkClass[] = 'nav-link dropdown has-arrow';
+	//$linkClass[] = 'nav-link dropdown has-arrow';
 	//$linkClass[] = 'nav-link-sub dropdown-toggle has-arrow';
-	
+
 	if ($current->level > 1)
 	{
 		$linkClass[] = 'nav-link sub dropdown-toggle has-arrow';
@@ -93,13 +93,13 @@ if ($current->hasChildren())
 	} else {
 		$linkClass[] = 'nav-link dropdown-toggle has-arrow';
 	}
-	
-	$dataToggle  = ' data-toggle="dropdown"';
+
+	$dataToggle  = ' data-bs-toggle="dropdown"';
 }
 else
 {
-	///$linkClass[] = 'nav-link dropdown';//'no-dropdown';
-	
+	//$linkClass[] = 'nav-link dropdown';//'no-dropdown';
+
 	if ($current->level > 1)
 	{
 		$linkClass[] = 'nav-link sub';
@@ -153,13 +153,29 @@ $itemImage = (empty($itemIconClass) && $itemImage) ? '&nbsp;<img src="' . Uri::r
 
 if ($link != '' && $current->target != '')
 {
-	echo "<a" . $linkClass . $dataToggle . " href=\"" . $link . "\" target=\"" . $current->target . "\">"
+    $dataToggleCurrent = $dataToggle;
+    if ($current->target == "_blank") {
+        $dataToggleCurrent = '';
+    }
+	echo "<a" . $linkClass . $dataToggleCurrent . " href=\"" . $link . "\"   target=\"" . $current->target . "\">"
 		. $iconClass
 		. '<span class="sidebar-item-title">' . $itemImage . Text::_($current->title) . '</span>' . $ajax . '</a>';
 }
 elseif ($link != '' && $current->type !== 'separator')
 {
-	echo "<a" . $linkClass . $dataToggle . " href=\"" . $link . "\">"
+    // If it has children, the link must be deactivated because of toggle
+    // there cannot be two functions on click:  1) open the submenu 2) go to the link
+    if ($current->hasChildren()){
+        $link = '#';
+    }
+
+    // BS toggle errors - skip toggle for links
+     $dataToggleCurrent = $dataToggle;
+    if ($link != '#') {
+        $dataToggleCurrent = '';
+    }
+
+	echo "<a" . $linkClass . $dataToggleCurrent . "  href=\"" . $link . "\">"
 		. $iconClass
 		. '<span class="sidebar-item-title">' . $itemImage . Text::_($current->title) . '</span>' . $iconImage . '</a>';
 }
@@ -192,19 +208,19 @@ if ($currentParams->get('menu-quicktask') && (int) $this->params->get('shownew',
 
 	if (!$permission || $user->authorise($permission, $scope))
 	{
-		
-		// todo 
+
+		// todo
 		/*echo '</li><li class="pl-5">';
-		
+
 		echo '<a href="' . $link . '">' . htmlentities(Text::_($title)) . '</a>';
 		echo ' <span class="fas fa-' . $icon . '" title="' . htmlentities(Text::_($title)) . '" aria-hidden="true"></span>';
 echo '<span class="menu-quicktask"><a href="' . $link . '">';
-  
-		*/																						
-		echo '<span class="menu-quicktask"><a href="' . $link . '">';			
+
+		*/
+		echo '<span class="menu-quicktask"><a href="' . $link . '">';
 		echo '<span class="fas fa-' . $icon . ' '.$doc->direction.'" title="' . htmlentities(Text::_($title)) . '" aria-hidden="true"></span>';
 		echo '<span class="sr-only">' . Text::_($title) . '</span>';
-		echo '</a></span>';			
+		echo '</a></span>';
 	}
 }
 
@@ -238,7 +254,7 @@ if ($this->enabled && $current->hasChildren())
 	{
 		echo '<ul id="collapse' . $this->getCounter() . '" class="dropdown-menu">'; //collapse-level-1 mm-collapse">' . "\n";
 	}
-	
+
 	if (!empty($dashboard)) {
 		echo $dashboard;
 	}

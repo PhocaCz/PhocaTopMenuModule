@@ -2,12 +2,12 @@
 <extension type="module" client="administrator" method="upgrade" version="4.0">
 	<name>mod_phocatopmenu</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>05/01/2021</creationDate>
+	<creationDate>04/02/2021</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.3</version>
+	<version>4.0.4</version>
 	<description>MOD_PHOCATOPMENU_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Phocatopmenu</namespace>
 	<projectName>PhocaTopMenuModule</projectName>
@@ -60,7 +60,7 @@
 			<field name="forum_url" type="url" label="MOD_PHOCATOPMENU_FIELD_FORUMURL_LABEL" description="MOD_PHOCATOPMENU_FIELD_FORUMURL_DESC" filter="url" size="30" default="" showon="menutype:*" validate="url"/>  
  
 			<field name="open_menu" type="list" label="MOD_PHOCATOPMENU_FIELD_EVENT_OPEN_MENU_LABEL" description="MOD_PHOCATOPMENU_FIELD_EVENT_OPEN_MENU_DESC" layout="joomla.form.field.list" default="2" filter="integer">
-				<option value="1">MOD_PHOCATOPMENU_CLICK</option>
+				<!--<option value="1">MOD_PHOCATOPMENU_CLICK</option>-->
 				<option value="2">MOD_PHOCATOPMENU_HOVER</option>
 			</field>
 			
