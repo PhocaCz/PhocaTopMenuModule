@@ -26,14 +26,14 @@ $custom_css 		= $params->get('custom_css', '');
 
 
 HTMLHelper::_('behavior.core');
-HTMLHelper::_('jquery.framework');
+//HTMLHelper::_('jquery.framework');
 
 $doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main.css');
 if ($open_menu == 2) {
 	$doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main-hover.css');
 }
 $doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/theme.css');
-$doc->addScript(JURI::root(true) . '/media/mod_phocatopmenu/js/main.js');
+//$doc->addScript(JURI::root(true) . '/media/mod_phocatopmenu/js/main.js');
 
 
 $enabled 		= !$app->input->getBool('hidemainmenu');
