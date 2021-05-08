@@ -140,3 +140,11 @@
 #phtopmenu .menu-quicktask a {
 	text-decoration: none;
 }
+
+#phtopmenu .dropend .dropdown-menu {
+    top: 0;
+    right: auto;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
