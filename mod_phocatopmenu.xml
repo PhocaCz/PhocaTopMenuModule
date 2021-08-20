@@ -2,12 +2,12 @@
 <extension type="module" client="administrator" method="upgrade" version="4.0">
 	<name>mod_phocatopmenu</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>08/05/2021</creationDate>
+	<creationDate>20/08/2021</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.6</version>
+	<version>4.0.7</version>
 	<description>MOD_PHOCATOPMENU_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Phocatopmenu</namespace>
 	<projectName>PhocaTopMenuModule</projectName>
@@ -19,11 +19,11 @@
 	</media>
 
 	<files>
-		<folder>src</folder>
 		<folder>tmpl</folder>
+		<folder>src</folder>
+		<filename module="mod_phocatopmenu">mod_phocatopmenu.php</filename>
 		<filename module="mod_phocatopmenu">index.html</filename>
 		<filename module="mod_phocatopmenu">manifest.xml</filename>
-		<filename module="mod_phocatopmenu">mod_phocatopmenu.php</filename>
 	</files>
 
 	<languages>
