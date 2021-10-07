@@ -20,9 +20,11 @@ $lang 		= Factory::getLanguage();
 $lang->load('mod_menu.sys');
 $lang->load('mod_menu');
 
-$open_menu 	= $params->get('open_menu', 2);
+$open_menu 	        = $params->get('open_menu', 2);
 $theme_style 		= $params->get('theme_style', 'black');
 $custom_css 		= $params->get('custom_css', '');
+$sticky_navbar 		= $params->get('sticky_navbar', 0);
+
 
 
 HTMLHelper::_('behavior.core');
@@ -35,6 +37,22 @@ if ($open_menu == 2) {
 $doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/theme.css');
 //$doc->addScript(JURI::root(true) . '/media/mod_phocatopmenu/js/main.js');
 
+$cssOutput = '';
+if ($sticky_navbar == 1) {
+
+    $cssOutput .= '
+    .ph-topmenu-navbar {
+       position: sticky;
+       top: 0;
+       height: 3rem;
+    }
+    
+    .subhead {
+       top: 3rem;
+    }
+    ';
+}
+
 
 $enabled 		= !$app->input->getBool('hidemainmenu');
 $menu			= new CssPhocatopmenu($app);
@@ -42,8 +60,12 @@ $root 			= $menu->load($params, $enabled);
 $root->level 	= 0;
 
 if ($custom_css != '') {
+    $cssOutput .= htmlspecialchars(strip_tags($custom_css));
+}
+
+if ($cssOutput != '') {
 	$doc->addCustomTag( "<style type=\"text/css\"> \n"
-	. htmlspecialchars(strip_tags($custom_css))
+	. $cssOutput
 	. "</style>\n");
 }
 

@@ -48,9 +48,9 @@ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu 
 
 
 
-## Version
+## Version (Joomla! 4.x)
 
-4.0.7
+4.0.8
 
 
 
