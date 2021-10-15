@@ -110,17 +110,20 @@
 }
 
 /* STYLES DEFAULT */
+.ph-topmenu-default {
+	background: var(--lightbluegray);
+}
 
 /* STYLES DARK */
 .ph-topmenu-dark {
-	background: var(--atum-bg-dark);
+	background: var(--template-bg-dark);
 	color: #fff;
 }
 .ph-topmenu-dark ul.navbar-nav li a {
 	color: #fff;
 }
 .ph-topmenu-dark ul.dropdown-menu li a {
-	color: var(--atum-bg-dark);
+	color: var(--template-bg-dark);
 }
 
 /* STYLES BLACK */
