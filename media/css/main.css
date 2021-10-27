@@ -25,7 +25,7 @@
 #phtopmenu .item .menu-dashboard:hover, 
 #phtopmenu .item .menu-quicktask:hover, 
 #phtopmenu .item a:hover {
-    background-color: var(--atum-link-color);
+    background-color: var(--template-link-color);
     color: #fff;
     text-decoration: none;
 }
