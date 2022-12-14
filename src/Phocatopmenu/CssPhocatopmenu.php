@@ -418,7 +418,10 @@ class CssPhocatopmenu
 			}
 
 			// Exclude if link is invalid
-			if (!\in_array($item->type, array('separator', 'heading', 'container')) && trim($item->link) === '')
+            if (!isset($item->link)) {
+                $item->link = '';
+            }
+			if (!\in_array($item->type, array('separator', 'heading', 'container')) && trim((string)$item->link) === '')
 			{
 				$parent->removeChild($item);
 				continue;
@@ -515,7 +518,7 @@ class CssPhocatopmenu
 		$identifier = $node->class;
 
 		// Top level is special
-		if (trim($identifier) == '')
+		if (trim((string)$identifier) == '')
 		{
 			return null;
 		}
