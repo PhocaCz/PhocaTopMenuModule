@@ -2,12 +2,12 @@
 <extension type="module" client="administrator" method="upgrade" version="4.0">
 	<name>mod_phocatopmenu</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>05/03/2023</creationDate>
+	<creationDate>28/03/2023</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.12</version>
+	<version>4.0.13</version>
 	<description>MOD_PHOCATOPMENU_DESCRIPTION</description>
 	<namespace path="src">Joomla\Module\Phocatopmenu</namespace>
 	<projectName>PhocaTopMenuModule</projectName>
