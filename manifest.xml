@@ -9,7 +9,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/4.0.13/mod_phocatopmenu_v4.0.13.zip</downloadurl>
 		</downloads>
-		<sha512>154886e89447f4c0b83d37dc28636bba</sha512>
+		<sha512>92e637bab89ded1f33bb30e87ff0f9549e65a1557f50e83960a9f87a600ddf122a496c15d918e1c403867c77d4d902a176727d758ff74286718c5263e789cdfe</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
