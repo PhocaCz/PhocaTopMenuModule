@@ -2,7 +2,7 @@
 <extension type="module" client="administrator" method="upgrade" version="4.0">
 	<name>mod_phocatopmenu</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>17/05/2023</creationDate>
+	<creationDate>19/05/2023</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
