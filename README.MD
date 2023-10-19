@@ -50,7 +50,11 @@ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu 
 
 ## Version (Joomla! 4.x)
 
-4.0.13
+4.0.14
+
+## Version (Joomla! 5.x)
+
+5.0.0
 
 
 
@@ -61,3 +65,17 @@ GNU/GPL
 
 
 This project is open source project - feel free to contribute! Thank you.
+
+
+
+## Social Media
+
+- [Phoca on Facebook](https://www.facebook.com/Phoca.cz)
+
+- [Phoca on X (Twitter)](https://twitter.com/PhocaCz)
+
+- [Phoca on YouTube](https://www.youtube.com/user/phocavideos)
+
+- [Phoca on GitHub](https://github.com/PhocaCz)
+
+- [Phoca on Reddit](https://www.reddit.com/user/PhocaCz)

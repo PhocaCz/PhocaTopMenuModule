@@ -24,7 +24,7 @@ $class     = $enabled ? 'nav flex-column main-nav ' . $direction : 'nav flex-col
 if ($root->hasChildren()) {
 
 	echo '<nav class="navbar navbar-expand-md navbar-inverse ph-topmenu-navbar ph-topmenu-'.$theme_style.'">';
-	echo '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#phtopmenu" aria-controls="topmenu" aria-expanded="false" aria-label="'.JText::_('MOD_PHOCATOPMENU_TOGGLE_NAVIGATION').'">';
+	echo '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#phtopmenu" aria-controls="topmenu" aria-expanded="false" aria-label="'.Text::_('MOD_PHOCATOPMENU_TOGGLE_NAVIGATION').'">';
 	echo '<span class="fas fa-bars"></span>';
 	echo '</button>';
 	echo '<div class="collapse navbar-collapse" id="phtopmenu">';

@@ -12,6 +12,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Uri\Uri;
 use Joomla\Module\Phocatopmenu\Administrator\Phocatopmenu\CssPhocatopmenu;
 
 $app		= Factory::getApplication();
@@ -25,17 +26,14 @@ $theme_style 		= $params->get('theme_style', 'black');
 $custom_css 		= $params->get('custom_css', '');
 $sticky_navbar 		= $params->get('sticky_navbar', 0);
 
-
-
 HTMLHelper::_('behavior.core');
 //HTMLHelper::_('jquery.framework');
-
-$doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main.css');
+$doc->addStyleSheet(Uri::root(true) . '/media/mod_phocatopmenu/css/main.css');
 if ($open_menu == 2) {
-	$doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/main-hover.css');
+	$doc->addStyleSheet(Uri::root(true) . '/media/mod_phocatopmenu/css/main-hover.css');
 }
-$doc->addStyleSheet(JURI::root(true) . '/media/mod_phocatopmenu/css/theme.css');
-//$doc->addScript(JURI::root(true) . '/media/mod_phocatopmenu/js/main.js');
+$doc->addStyleSheet(Uri::root(true) . '/media/mod_phocatopmenu/css/theme.css');
+//$doc->addScript(Uri::root(true) . '/media/mod_phocatopmenu/js/main.js');
 
 $cssOutput = '';
 if ($sticky_navbar == 1) {

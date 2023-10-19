@@ -5,12 +5,12 @@
 		<description><![CDATA[ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu in Joomla! administration. ]]></description>
 		<element>mod_phocatopmenu</element>
 		<type>module</type>
-		<version>4.0.13</version>
-		<infourl title="Phoca Top Menu Module 4.0.13">https://www.phoca.cz/</infourl>
+		<version>4.0.14</version>
+		<infourl title="Phoca Top Menu Module 4.0.14">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/4.0.13/mod_phocatopmenu_v4.0.13.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/4.0.14/mod_phocatopmenu_v4.0.14.zip</downloadurl>
 		</downloads>
-		<sha512>a830a833558dbba8a6affe850e2a304c2137f8ccaca5ab8877c80d966a7cdd891dc0261e6a2865f932aa0b4e308b65324c4b96635ad7acc5d7a2500c0b10df22</sha512>
+		<sha512>c033a34ecbe08e47b398c8ece834f9473848ba3688a82cfef331cd1c1f7843720424f83c63e538142d729e86dfb78a4d4abae524750756d6f6d86c1fd8345dbc</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -18,6 +18,26 @@
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="4\.*"/>
+		<client>administrator</client>
+	</update>
+	<update>
+		<name><![CDATA[ Phoca Top Menu Module ]]></name>
+		<description><![CDATA[ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu in Joomla! administration. ]]></description>
+		<element>mod_phocatopmenu</element>
+		<type>module</type>
+		<version>5.0.0</version>
+		<infourl title="Phoca Top Menu Module 5.0.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/5.0.0/mod_phocatopmenu_v5.0.0.zip</downloadurl>
+		</downloads>
+		<sha512>1df9e1b7ff162d1036e0a3aa9f64ae9376f63d86198d29c7d623dc6442db91ca73e686ae5bd00675d0b89f4a0a68c6231f005b5786ac4117e1eff8cae4d0d48a</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="(4|5)\.*"/>
 		<client>administrator</client>
 	</update>
 </updates>
