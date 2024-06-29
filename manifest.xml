@@ -25,12 +25,12 @@
 		<description><![CDATA[ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu in Joomla! administration. ]]></description>
 		<element>mod_phocatopmenu</element>
 		<type>module</type>
-		<version>5.0.0</version>
-		<infourl title="Phoca Top Menu Module 5.0.0">https://www.phoca.cz/</infourl>
+		<version>5.0.1</version>
+		<infourl title="Phoca Top Menu Module 5.0.1">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/5.0.0/mod_phocatopmenu_v5.0.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/5.0.1/mod_phocatopmenu_v5.0.1.zip</downloadurl>
 		</downloads>
-		<sha512>1df9e1b7ff162d1036e0a3aa9f64ae9376f63d86198d29c7d623dc6442db91ca73e686ae5bd00675d0b89f4a0a68c6231f005b5786ac4117e1eff8cae4d0d48a</sha512>
+		<sha512>1b0fce44754d30ca39c795d3b1c4a45649423bbd126b5efa52ce2967d0d56c0433c5c2e164c83a6204d1ab19c39879b497710d4be1abc46874f2c075f8743942</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>

@@ -158,8 +158,18 @@
     display: none;
   }
 }
-
+/*
 @media (prefers-color-scheme: dark) {
+*/
+[data-bs-theme="dark"] {
+
+	#phtopmenu .item .menu-dashboard:hover,
+	#phtopmenu .item .menu-quicktask:hover,
+	#phtopmenu .item a:hover {
+		background-color: var(--header-item-content-bg);
+	}
+
+
   .ph-topmenu-black ul.dropdown-menu li a {
 	  color: #fff;
 	}
