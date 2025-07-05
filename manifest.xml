@@ -25,19 +25,19 @@
 		<description><![CDATA[ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu in Joomla! administration. ]]></description>
 		<element>mod_phocatopmenu</element>
 		<type>module</type>
-		<version>5.0.1</version>
-		<infourl title="Phoca Top Menu Module 5.0.1">https://www.phoca.cz/</infourl>
+		<version>5.1.0</version>
+		<infourl title="Phoca Top Menu Module 5.1.0">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/5.0.1/mod_phocatopmenu_v5.0.1.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/5.1.0/mod_phocatopmenu_v5.1.0.zip</downloadurl>
 		</downloads>
-		<sha512>1b0fce44754d30ca39c795d3b1c4a45649423bbd126b5efa52ce2967d0d56c0433c5c2e164c83a6204d1ab19c39879b497710d4be1abc46874f2c075f8743942</sha512>
+		<sha512>f46a061f99797ec8be8bb7b9bba22c0a028e0c41cf2e3e9d0ef43372754d634ce7cfb9093d24b4f77c2e4003ca11514e59e5b1c99bc488078d88b07180fa4442</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
-		<targetplatform name="joomla" version="(4|5)\.*"/>
+		<targetplatform name="joomla" version="5\.*"/>
 		<client>administrator</client>
 	</update>
 </updates>
