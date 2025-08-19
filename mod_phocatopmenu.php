@@ -52,7 +52,7 @@ if ($sticky_navbar == 1) {
 }
 
 
-$enabled 		= !$app->getInput()->input->getBool('hidemainmenu');
+$enabled 		= !$app->getInput()->getBool('hidemainmenu');
 $menu			= new CssPhocatopmenu($app);
 $root 			= $menu->load($params, $enabled);
 $root->level 	= 0;

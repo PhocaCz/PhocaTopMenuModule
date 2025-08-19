@@ -30,7 +30,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/5.1.1/mod_phocatopmenu_v5.1.1.zip</downloadurl>
 		</downloads>
-		<sha512>219446b72d94ba8ed66b8dd051f669f14c63e36f4ebfee5a3a8f33da0cb339ebae465d470cef2adba3991ddbe66145131ffb61836bb5f2436583d388f88372d6</sha512>
+		<sha512>3d3fd4342ef4a8c51ae32b5d897ebaa2169a92bbbf84bea3a7431eddaa354d6fead0e3ce3caa0eefb9243681fedae17fb61d4e1576283ef5631916f4a779c291</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
