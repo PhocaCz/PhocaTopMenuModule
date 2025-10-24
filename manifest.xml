@@ -40,4 +40,24 @@
 		<targetplatform name="joomla" version="5\.*"/>
 		<client>administrator</client>
 	</update>
+	<update>
+		<name><![CDATA[ Phoca Top Menu Module ]]></name>
+		<description><![CDATA[ Phoca Top Menu Module - a Joomla! CMS module which displays horizontal top menu in Joomla! administration. ]]></description>
+		<element>mod_phocatopmenu</element>
+		<type>module</type>
+		<version>6.0.0</version>
+		<infourl title="Phoca Top Menu Module 6.0.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaTopMenuModule/releases/download/6.0.0/mod_phocatopmenu_v6.0.0.zip</downloadurl>
+		</downloads>
+		<sha512>1f27c0a842118656bd53cad6550d6fb8c789ef577b4fd05da4981c9cd1ec4f9f7c95a26fd47803ccec3a3b1a9d0f7d2f7e3cbab3433aac06af3c2a194e18c70e</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="(5|6)\.*"/>
+		<client>administrator</client>
+	</update>
 </updates>
